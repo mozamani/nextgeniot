@@ -22,4 +22,10 @@ Most of the IoT solutions essentially follow the below basic architecture:
 
 ![alt text](https://github.com/mozamani/nextgeniot/blob/master/files/arch.png) <!-- .element height="10%" width="12%" -->
 
-DevKits can be easily connect to 
+1) IoT devices connect to IoT Hub and start sending messages (see an intro [here](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-arduino-iot-devkit-az3166-get-started)) 
+2) Iot Hub receives and manages messsages from multiple devices ([link](https://docs.microsoft.com/en-us/azure/iot-hub/))
+3) Messages from IoT Hub can either being just stored in a storage unit, trigger a fucntion directly (e.g. [here](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-arduino-iot-devkit-az3166-door-monitor)), or being sent to a processing unit like [Azure Stream Analytics](https://docs.microsoft.com/en-us/azure/stream-analytics/)
+4) In addition to it's embedded analytical and machine learning capabilities (see [here](https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-machine-learning-anomaly-detection)), one can also create bespoke ML models using Azure machine learning services and call those models from the Stream Analytics functions (see an example [here](https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-machine-learning-integration-tutorial)).
+
+## Examples
+
