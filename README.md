@@ -20,6 +20,6 @@ A number of example projects using IoT DevKit can be found [here](https://micros
 ## Reference architecture
 Most of the IoT solutions essentially follow the below basic architecture:
 
-![alt text](https://github.com/mozamani/nextgeniot/blob/master/files/logo.png) <!-- .element height="10%" width="12%" -->
+![alt text](https://github.com/mozamani/nextgeniot/blob/master/files/arch.png) <!-- .element height="10%" width="12%" -->
 
 DevKits can be easily connect to 
