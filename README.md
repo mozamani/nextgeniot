@@ -11,6 +11,10 @@ In this hands-on session, we will use [MXCHIP IoT DevKit](https://microsoft.gith
 5) Azure Cognitive Services
 6) Azure Functions 
 
+A number of example projects using IoT DevKit can be found [here](https://microsoft.github.io/azure-iot-developer-kit/docs/projects/), including: 
+Markup : * [Remote montitoring of temprature, pressure, humidity](https://docs.microsoft.com/en-us/azure/iot-accelerators/iot-accelerators-arduino-iot-devkit-az3166-devkit-remote-monitoring-v2)
+         * [Creating a door monitor](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-arduino-iot-devkit-az3166-door-monitor)
+         * []
 # Reference architecture
 
 ![alt text](https://github.com/mozamani/nextgeniot/blob/master/files/logo.png) <!-- .element height="10%" width="12%" -->
