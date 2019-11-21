@@ -12,10 +12,10 @@ In this hands-on session, we will use [MXCHIP IoT DevKit](https://microsoft.gith
 6) Azure Functions 
 
 A number of example projects using IoT DevKit can be found [here](https://microsoft.github.io/azure-iot-developer-kit/docs/projects/), including: 
-1)[Remote montitoring of temprature, pressure, humidity](https://docs.microsoft.com/en-us/azure/iot-accelerators/iot-accelerators-arduino-iot-devkit-az3166-devkit-remote-monitoring-v2)
-2) [Creating a door monitor](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-arduino-iot-devkit-az3166-door-monitor)
-3) [Making a voice translator using Azure Cognitive Services](https://docs.microsoft.com/en-us/samples/azure-samples/mxchip-iot-devkit-translator/sample/)
-4) [Sending alerts or tweets triggered by the motion sensor](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-arduino-iot-devkit-az3166-translator)
+1) [Remote montitoring of temprature, pressure, humidity](https://docs.microsoft.com/en-us/azure/iot-accelerators/iot-accelerators-arduino-iot-devkit-az3166-devkit-remote-monitoring-v2)<br>
+2) [Creating a door monitor](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-arduino-iot-devkit-az3166-door-monitor)<br>
+3) [Making a voice translator using Azure Cognitive Services](https://docs.microsoft.com/en-us/samples/azure-samples/mxchip-iot-devkit-translator/sample/)<br>
+4) [Sending alerts or tweets triggered by the motion sensor](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-arduino-iot-devkit-az3166-translator)<br>
 
 ## Reference architecture
 Most of the IoT solutions essentially follow the below basic architecture:
