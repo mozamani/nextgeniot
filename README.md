@@ -39,7 +39,7 @@ We first connect our DevKits to our Azure Event Hubs and start streaming data ([
 
 
 ## AI on Edge
-The image below shows a basic e2e refernce architecture for an analytics platform, including training and deploying machine learnig models on IoT edge. 
+The image below shows a basic e2e reference architecture for training and deploying machine learnig models on IoT edge (among other possibilities). 
 ![alt text](https://github.com/mozamani/nextgeniot/blob/master/files/architecture.png)
 A good example of AI on edge use-cases can be found [here](https://github.com/microsoft/ComputerVision). Microsoft [Computer Vision](https://github.com/microsoft/ComputerVision) provides examples and best practice guidelines for building computer vision systems. All examples are given as Jupyter notebooks, and use PyTorch as the deep learning library.
 This [tutorial](https://docs.microsoft.com/en-us/azure/iot-edge/tutorial-deploy-custom-vision) shows how to train and deploy a comoputer vision model on IoT edge devices using the [Custom Vision](https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/home) service. <br>
