@@ -85,6 +85,6 @@ With [Azure ML + Azure DevOps](https://github.com/Microsoft/MLOps) you can effec
 7) [Anomaly detection in Azure Stream Analytics](https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-machine-learning-anomaly-detection) + [Github repo](https://github.com/Azure/azure-stream-analytics) + [YouTube video](https://www.youtube.com/watch?v=Ra8HhBLdzHE)
 8) [Azure Machine Learning Studio (classic) integration in Stream Analytics (Preview)](https://docs.microsoft.com/bs-latn-ba/azure/stream-analytics/stream-analytics-how-to-configure-azure-machine-learning-endpoints-in-stream-analytics)
 
-8) 
+
 
 
