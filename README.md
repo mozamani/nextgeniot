@@ -20,7 +20,7 @@ A number of example projects using IoT DevKit can be found [here](https://micros
 ## Reference architecture
 Most of the IoT solutions essentially follow the below basic architecture:
 
-![alt text](https://github.com/mozamani/nextgeniot/blob/master/files/arch.png) <!-- .element height="10%" width="12%" -->
+![alt text](https://github.com/mozamani/nextgeniot/blob/master/files/ref_arch.png) <!-- .element height="10%" width="12%" -->
 
 1) IoT devices connect to IoT Hub and start sending messages (see an intro [here](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-arduino-iot-devkit-az3166-get-started)) 
 2) Iot Hub receives and manages messsages from multiple devices ([link](https://docs.microsoft.com/en-us/azure/iot-hub/))
@@ -28,4 +28,5 @@ Most of the IoT solutions essentially follow the below basic architecture:
 4) In addition to it's embedded analytical and machine learning capabilities (see [here](https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-machine-learning-anomaly-detection)), one can also create bespoke ML models using [Azure Machine Learning Services](https://docs.microsoft.com/en-us/azure/machine-learning/) and expose those models to be called from the Stream Analytics functions (see an example [here](https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-machine-learning-integration-tutorial)).
 
 ## Examples
+![alt text](https://github.com/mozamani/nextgeniot/blob/master/files/weather_arch.png) <!-- .element height="10%" width="12%" -->
 
