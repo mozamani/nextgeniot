@@ -22,7 +22,9 @@ A number of example projects using IoT DevKit can be found [here](https://micros
 3) [Making a voice translator using Azure Cognitive Services](https://docs.microsoft.com/en-us/samples/azure-samples/mxchip-iot-devkit-translator/sample/)<br>
 4) [Sending alerts or tweets triggered by the motion sensor](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-arduino-iot-devkit-az3166-translator)<br>
 
+
 ## Reference architecture
+
 Most of the IoT solutions essentially follow the below basic architecture:
 
 ![alt text](https://github.com/mozamani/nextgeniot/blob/master/files/ref_arch.png) <!-- .element height="10%" width="12%" -->
@@ -33,37 +35,56 @@ Most of the IoT solutions essentially follow the below basic architecture:
 4) In addition to it's embedded analytical and machine learning capabilities (see [here](https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-machine-learning-anomaly-detection)), one can also create bespoke ML models using [Azure Machine Learning Services](https://docs.microsoft.com/en-us/azure/machine-learning/) and expose those models to be called from the Stream Analytics functions (see an example [here](https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-machine-learning-integration-tutorial)).
 
 ## Example
+
 ### Predicting probability of rain with IoT DevKit
 ![alt text](https://github.com/mozamani/nextgeniot/blob/master/files/weather_arch.png) <!-- .element height="10%" width="12%" -->
+
 We first connect our DevKits to our Azure Event Hubs and start streaming data ([link](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-arduino-iot-devkit-az3166-get-started)), then create an Azure Streaming Analytics job and define [input stream](https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-add-inputs)) and [output(s)](https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-define-outputs). Using the [historical weather data](https://github.com/mozamani/nextgeniot/blob/master/files/weather_clean.csv), we can build a machine learning classifier that predicts probability of rain based on measured humidity and temprature levels. We then expose this model as a webservice and call the model using a [stream analytcis function](https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-scale-with-machine-learning-functions). Now we can query our stream and start predicting weather live. Results can be either written to an output storage unit or a live [PowerBI dashboard](https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-power-bi-dashboard).   
 
 
 ## AI on Edge
+
 The image below shows a basic e2e reference architecture for training and deploying machine learnig models on IoT edge (among other possibilities). 
+
 ![alt text](https://github.com/mozamani/nextgeniot/blob/master/files/architecture.png)
+
 A good example of AI on edge use-cases can be found [here](https://github.com/microsoft/ComputerVision). Microsoft [Computer Vision](https://github.com/microsoft/ComputerVision) provides examples and best practice guidelines for building computer vision systems. All examples are given as Jupyter notebooks, and use PyTorch as the deep learning library.
 This [tutorial](https://docs.microsoft.com/en-us/azure/iot-edge/tutorial-deploy-custom-vision) shows how to train and deploy a comoputer vision model on IoT edge devices using the [Custom Vision](https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/home) service. <br>
+
 ![alt text](https://docs.microsoft.com/en-us/azure/iot-edge/media/tutorial-deploy-custom-vision/custom-vision-architecture.png)    
 
 Microsoft and [NVIDIA](https://developer.nvidia.com/deepstream-sdk)  extend video analytics to the intelligent edge using [DeepStream SDK](https://azure.microsoft.com/en-us/blog/microsoft-and-nvidia-extend-video-analytics-to-the-intelligent-edge/)
 ![alt text](https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e86d2867-40b5-4726-9334-82fb715526f5.jpg)
 
 [This tutorial](https://github.com/Azure-Samples/onnxruntime-iot-edge) shows how to integrate Azure services with machine learning on the NVIDIA Jetson Nano (an ARM64 device) using Python. By the end of this sample, you will have a low-cost DIY solution for object detection within a space and a unique understanding of integrating ARM64 platform with Azure IoT services and machine learning.
+
 ![alt text](https://github.com/Azure-Samples/onnxruntime-iot-edge/raw/master/images_for_readme/arch.jpg)
 
 This [repo](https://github.com/Microsoft/vision-ai-developer-kit) contains the components needed to use the [Vision AI Developer Kit](https://azure.github.io/Vision-AI-DevKit-Pages/) to develop Neural Network models which can be deployed to the Vision AI DevKit hardware.
+
 ![alt text](https://azure.github.io/Vision-AI-DevKit-Pages/assets/images/Peabody_spec_image.png)
 
 
 ### MLOps with Azure ML
+
 Azure ML contains a number of asset management and orchestration services to help you manage the lifecycle of your model training & deployment workflows.
 
 With [Azure ML + Azure DevOps](https://github.com/Microsoft/MLOps) you can effectively and cohesively manage your datasets, experiments, models, and ML-infused applications.  
+
 ![alt text](https://github.com/microsoft/MLOps/raw/master/media/ml-lifecycle.png)
 
 
 ## Useful Links
 
-1) IoT device simulators: [IoT MXChip DevKit simulator](https://azure-samples.github.io/iot-devkit-web-simulator/), [Raspberry Pi simulator](https://azure-samples.github.io/raspberry-pi-web-simulator/#GetStarted) and [multiple device simulators](https://www.azureiotsolutions.com/Accelerators)
-2)
+1) IoT device simulators: [IoT MXChip DevKit simulator](https://azure-samples.github.io/iot-devkit-web-simulator/) + [Github page](https://github.com/Azure-Samples/iot-devkit-web-simulator), [Raspberry Pi simulator](https://azure-samples.github.io/raspberry-pi-web-simulator/#GetStarted) (+ [connection instructions](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started)) and [multiple device simulators](https://www.azureiotsolutions.com/Accelerators) + [Githuib page](https://github.com/Azure/device-simulation-dotnet)
+2) [Use Azure IoT Tools for Visual Studio Code to send and receive messages between your device and IoT Hub](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-vscode-iot-toolkit-cloud-device-messaging)
+3) [Connect an MXChip IoT DevKit device to your Azure IoT Central application](https://docs.microsoft.com/en-us/azure/iot-central/preview/howto-connect-devkit) + [Create an Azure IoT Central application](https://docs.microsoft.com/en-us/azure/iot-central/preview/quick-deploy-iot-central)
+4) [Try a cloud-based remote monitoring solution](https://docs.microsoft.com/en-us/azure/iot-accelerators/quickstart-remote-monitoring-deploy)
+5) [Cloud City IoT Hack](https://github.com/Azure/CloudIoTHack)
+6) [Keyword Spotting on IoT DevKit with ELL](https://github.com/IoTDevEnvExamples/DevKitKeywordSpotter/blob/master/README.md)
+7) [Anomaly detection in Azure Stream Analytics](https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-machine-learning-anomaly-detection) + [Github repo](https://github.com/Azure/azure-stream-analytics) + [YouTube video](https://www.youtube.com/watch?v=Ra8HhBLdzHE)
+8) [Azure Machine Learning Studio (classic) integration in Stream Analytics (Preview)](https://docs.microsoft.com/bs-latn-ba/azure/stream-analytics/stream-analytics-how-to-configure-azure-machine-learning-endpoints-in-stream-analytics)
+
+8) 
+
 
