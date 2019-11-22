@@ -62,4 +62,8 @@ With [Azure ML + Azure DevOps](https://github.com/Microsoft/MLOps) you can effec
 ![alt text](https://github.com/microsoft/MLOps/raw/master/media/ml-lifecycle.png)
 
 
+## Useful Links
+
+1) IoT device simulators: [IoT MXChip DevKit simulator](https://azure-samples.github.io/iot-devkit-web-simulator/), [Raspberry Pi simulator](https://azure-samples.github.io/raspberry-pi-web-simulator/#GetStarted) and [multiple device simulators](https://www.azureiotsolutions.com/Accelerators)
+2)
 
