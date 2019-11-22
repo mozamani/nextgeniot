@@ -37,3 +37,29 @@ Most of the IoT solutions essentially follow the below basic architecture:
 ![alt text](https://github.com/mozamani/nextgeniot/blob/master/files/weather_arch.png) <!-- .element height="10%" width="12%" -->
 We first connect our DevKits to our Azure Event Hubs and start streaming data ([link](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-arduino-iot-devkit-az3166-get-started)), then create an Azure Streaming Analytics job and define [input stream](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-arduino-iot-devkit-az3166-get-started)) and [output(s)](). Using the [historical weather data](), we can build a machine learning classifier that predicts probability of rain based on measured humidity and temprature levels. We then expose this model as a webservice and call the model using a [stream analytcis function](). Now we can query our stream and start predicting weather live. Results can be either written to an output storage unit or a live [PowerBI dashboard]().   
 
+
+## AI on Edge
+The image below shows a basic e2e refernce architecture for an analytics platform, including training and deploying machine learnig models on IoT edge. 
+![alt text](https://github.com/mozamani/nextgeniot/blob/master/files/architecture.png)
+A good example of AI on edge use-cases can be found [here](https://github.com/microsoft/ComputerVision). Microsoft [Computer Vision](https://github.com/microsoft/ComputerVision) provides examples and best practice guidelines for building computer vision systems. All examples are given as Jupyter notebooks, and use PyTorch as the deep learning library.
+This [tutorial](https://docs.microsoft.com/en-us/azure/iot-edge/tutorial-deploy-custom-vision) shows how to train and deploy a comoputer vision model on IoT edge devices using the [Custom Vision](https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/home) service. <br>
+![alt text](https://docs.microsoft.com/en-us/azure/iot-edge/media/tutorial-deploy-custom-vision/custom-vision-architecture.png)    
+
+Microsoft and [NVIDIA](https://developer.nvidia.com/deepstream-sdk)  extend video analytics to the intelligent edge using [DeepStream SDK](https://azure.microsoft.com/en-us/blog/microsoft-and-nvidia-extend-video-analytics-to-the-intelligent-edge/)
+![alt text](https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e86d2867-40b5-4726-9334-82fb715526f5.jpg)
+
+[This tutorial](https://github.com/Azure-Samples/onnxruntime-iot-edge) shows how to integrate Azure services with machine learning on the NVIDIA Jetson Nano (an ARM64 device) using Python. By the end of this sample, you will have a low-cost DIY solution for object detection within a space and a unique understanding of integrating ARM64 platform with Azure IoT services and machine learning.
+![alt text](https://github.com/Azure-Samples/onnxruntime-iot-edge/raw/master/images_for_readme/arch.jpg)
+
+This [repo](https://github.com/Microsoft/vision-ai-developer-kit) contains the components needed to use the [Vision AI Developer Kit](https://azure.github.io/Vision-AI-DevKit-Pages/) to develop Neural Network models which can be deployed to the Vision AI DevKit hardware.
+![alt text](https://azure.github.io/Vision-AI-DevKit-Pages/assets/images/Peabody_spec_image.png)
+
+
+### MLOps with Azure ML
+Azure ML contains a number of asset management and orchestration services to help you manage the lifecycle of your model training & deployment workflows.
+
+With [Azure ML + Azure DevOps](https://github.com/Microsoft/MLOps) you can effectively and cohesively manage your datasets, experiments, models, and ML-infused applications.  
+![alt text](https://github.com/microsoft/MLOps/raw/master/media/ml-lifecycle.png)
+
+
+
