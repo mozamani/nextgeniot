@@ -3,7 +3,10 @@
 ![alt text](https://github.com/mozamani/nextgeniot/blob/master/files/logo.png) <!-- .element height="10%" width="12%" -->
 
 ## Outline
-In this hands-on session, we will use [MXCHIP IoT DevKit](https://microsoft.github.io/azure-iot-developer-kit/) as our main IoT physical devices. These kits are equipied with OLED display, headphone, microphone, sensors like temperature, humidity, motion, pressure and Wifi helping us to build flexible IoT projects quickly. In addition to the DevKit, we would need (depending on the use-case):<br>
+In this hands-on session, we will use [MXCHIP IoT DevKit](https://microsoft.github.io/azure-iot-developer-kit/) as our main IoT physical devices. 
+![alt text](https://github.com/mozamani/nextgeniot/blob/master/files/MXChip.png) <!-- .element height="10%" width="12%" -->
+
+These kits are equipied with OLED display, headphone, microphone, sensors like temperature, humidity, motion, pressure and Wifi helping us to build flexible IoT projects quickly. In addition to the DevKit, we would need (depending on the use-case):<br>
 
 1) Azure subscription
 2) Azure IoT Hub 
